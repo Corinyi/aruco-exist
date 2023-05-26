@@ -41,6 +41,7 @@ def run_speech(info_dict, id):
 
 def main():
     cap = cv2.VideoCapture(0)
+    # cap = cv2.VideoCapture(-1)
     aruco_dict = aruco.Dictionary_get(aruco.DICT_4X4_250)
     parameters = aruco.DetectorParameters_create()
     print(parameters.maxMarkerPerimeterRate)
